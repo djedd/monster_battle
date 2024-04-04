@@ -1,5 +1,5 @@
 import { MonsterService } from './monsters.service';
-import monstersData from 'data/monsters.json';
+import monstersData from '../../../data/monsters.json';
 import { MonsterBattleResult } from '../../models/interfaces/monster.interface';
 import battleResult from '../../constants/tests/battleResult.json';
 

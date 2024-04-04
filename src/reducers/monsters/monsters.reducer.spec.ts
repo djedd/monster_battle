@@ -1,6 +1,6 @@
 import { fetchBattleResult, fetchMonstersData, setBattleResult, setComputerMonster, setSelectedMonster } from './monsters.actions';
 import { monstersReducer } from './monsters.reducer';
-import monstersData from 'data/monsters.json';
+import monstersData from '../../../data/monsters.json';
 import battleResult from '../../constants/tests/battleResult.json';
 
 describe('Monsters Reducer', () => {
