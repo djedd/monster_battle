@@ -1,10 +1,11 @@
-import { AppContainer } from './App.styled'
+import { Box } from '@mui/material';
 import { BattleOfMonsters } from './pages/battle-of-monsters/BattleOfMonsters'
+import "./App.scss";
 
 const App = () => (
-  <AppContainer>
+  <Box className="app-container">
     <BattleOfMonsters /> 
-  </AppContainer>
+  </Box>
 )
 
 export default App

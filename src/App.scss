@@ -1,0 +1,9 @@
+@import './assets/styles/colors.scss';
+
+.app-container {
+  background: $lightGray;
+    width: 100%;
+    height: calc(100vh - 69px);
+    max-height: 100vh;
+    padding-top: 69px;
+}
