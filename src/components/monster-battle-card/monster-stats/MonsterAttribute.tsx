@@ -1,5 +1,5 @@
-import { Typography } from "@mui/material"
-import { ProgressBar } from "../MonsterBattleCard.styled"
+import { LinearProgress, Typography } from "@mui/material"
+import './MonsterAttribute.scss';
 
 type MonsterAttributeProps = {
     attributeName?: string,
@@ -10,7 +10,7 @@ const MonsterAttribute: React.FC<MonsterAttributeProps> = ({ attributeName, valu
     return (
         <>
             <Typography>{attributeName}</Typography>
-            <ProgressBar variant="determinate" value={value}/>
+            <LinearProgress variant="determinate" className="battle-progress-bar" value={value}/>
         </>
     )
 }

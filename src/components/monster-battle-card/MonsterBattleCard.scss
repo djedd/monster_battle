@@ -30,20 +30,6 @@
     }
   }
 
-  .battle-progress-bar {
-    height: 8;
-    border-radius: 15;
-
-    &.colorPrimary {
-      background-color: $progressBarBackground;
-    }
-
-    .bar {
-      border-radius: 15;
-      background-color: $progressColor;
-    }
-  }
-
   .battle-image {
     width: 283px;
     height: 178px;

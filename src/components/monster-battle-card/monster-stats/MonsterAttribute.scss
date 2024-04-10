@@ -1,0 +1,14 @@
+@import '../../../assets/styles/colors.scss';
+
+.battle-progress-bar {
+  border-radius: 15px;
+
+  &.MuiLinearProgress-root {
+    height: 8px;
+    background-color: $progressBarBackground;
+    border-radius: 15;
+    .MuiLinearProgress-bar {
+      background-color: $progressColor;
+    }
+  }
+}
