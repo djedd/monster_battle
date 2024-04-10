@@ -2,12 +2,15 @@
 @import '../../assets/styles/typography.scss';
 
 .list-title {
-  font-family: $mainFontFamily !important;
-  font-style: $fontStyle !important;
-  font-weight: $fontWeightRegular !important;
-  font-size: 24px !important;
-  line-height: 28px !important;
-  color: $black !important;
+  color: $black;
+
+  &.MuiTypography-root {
+    font-family: $mainFontFamily;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .list-section {
