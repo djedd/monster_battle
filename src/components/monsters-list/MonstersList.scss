@@ -1,0 +1,52 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/typography.scss';
+
+.list-title {
+  font-family: $mainFontFamily !important;
+  font-style: $fontStyle !important;
+  font-weight: $fontWeightRegular !important;
+  font-size: 24px !important;
+  line-height: 28px !important;
+  color: $black !important;
+}
+
+.list-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+
+  .list-card {
+    background: $white;
+    border: 1px solid transparent;
+    box-shadow: -2px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    &.selected {
+      border-color: $black;
+    }
+
+    .list-card-name {
+      font-family: $mainFontFamily;
+      font-style: normal;
+      font-weight: $fontWeightRegular;
+      font-size: 16px;
+      line-height: 19px;
+      color: $black;
+      padding: 7px 0;
+    }
+
+    .list-card-image {
+      border-radius: 7px;
+      width: 136px;
+      height: 100px;
+    }
+  }
+}

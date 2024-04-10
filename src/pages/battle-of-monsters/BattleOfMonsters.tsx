@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { useAppDispatch } from '../../app/hooks';
 import { MonsterBattleCard } from '../../components/monster-battle-card/MonsterBattleCard';
 import { MonstersList } from '../../components/monsters-list/MonstersList';
-import { Title } from '../../components/title/Title';
 import {
   fetchBattleResult,
   fetchMonstersData,
@@ -16,7 +15,7 @@ import {
 } from '../../reducers/monsters/monsters.selectors';
 import { WinnerDisplay } from '../../components/winner-display/WinnerDisplay';
 import './BattleOfMonsters.scss';
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 const BattleOfMonsters = () => {
   const dispatch = useAppDispatch();
@@ -44,7 +43,7 @@ const BattleOfMonsters = () => {
 
   return (
     <div className="page-container">
-      <Title>Battle of Monsters</Title>
+      <Typography className="page-title">Battle of Monsters</Typography>
       <MonstersList monsters={monsters} />
       {battleResult && <WinnerDisplay text={`${battleResult.winner.name}`} />}
       <section className="page-section">

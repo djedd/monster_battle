@@ -1,0 +1,56 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/typography.scss';
+
+.battle-card {
+  padding: 13px 11px;
+  width: calc(307px - 22px);
+  height: 415px;
+  background: $white;
+  box-shadow: -2px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+  .battle-title {
+    font-family: $mainFontFamily;
+    font-style: normal;
+    font-weight: $fontWeightRegular;
+    font-size: 22px;
+    line-height: 42px;
+    color: $black;
+
+    &.battle-title--aligned {
+      align-self: start;
+    }
+  }
+
+  .battle-progress-bar {
+    height: 8;
+    border-radius: 15;
+
+    &.colorPrimary {
+      background-color: $progressBarBackground;
+    }
+
+    .bar {
+      border-radius: 15;
+      background-color: $progressColor;
+    }
+  }
+
+  .battle-image {
+    width: 283px;
+    height: 178px;
+  }
+
+  .battle-divider {
+    width: 283px;
+  }
+
+}

@@ -8,6 +8,15 @@
   max-width: 820px;
   margin: 0 auto;
 
+  .page-title {
+    font-family: $mainFontFamily;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    font-size: 36px;
+    color: $black;
+    line-height: 42px;
+  }
+
   .page-section {
     display: flex;
     align-items: center;
