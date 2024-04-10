@@ -1,13 +1,14 @@
-import { WinnerDisplayContainer, WinnerText } from "./WinnerDisplay.styled"
+import { Typography } from "@mui/material";
+import "./WinnerDisplay.scss"
 
 type Props = {
     text: string;
 }
 
 const WinnerDisplay: React.FC<Props> = ({ text }) => (
-    <WinnerDisplayContainer>
-        <WinnerText>{text} wins!</WinnerText>
-    </WinnerDisplayContainer>
+    <div className="display-container">
+        <Typography className="display-text">{text} wins!</Typography>
+    </div>
 )
 
 export { WinnerDisplay }

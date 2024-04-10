@@ -1,0 +1,20 @@
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/typography.scss';
+
+.display-container {
+  background: $lightBlue;
+  border: 1px solid $black;
+  box-shadow: -2px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 17px 28px;
+  
+  .display-text{
+    font-family: $mainFontFamily;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+}
+

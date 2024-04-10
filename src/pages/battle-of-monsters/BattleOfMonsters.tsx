@@ -14,12 +14,9 @@ import {
   selectMonsters,
   selectSelectedMonster,
 } from '../../reducers/monsters/monsters.selectors';
-import {
-  BattleSection,
-  PageContainer,
-  StartBattleButton,
-} from './BattleOfMonsters.styled';
 import { WinnerDisplay } from '../../components/winner-display/WinnerDisplay';
+import './BattleOfMonsters.scss';
+import { Button } from '@mui/material';
 
 const BattleOfMonsters = () => {
   const dispatch = useAppDispatch();
@@ -46,25 +43,26 @@ const BattleOfMonsters = () => {
   };
 
   return (
-    <PageContainer>
+    <div className="page-container">
       <Title>Battle of Monsters</Title>
       <MonstersList monsters={monsters} />
       {battleResult && <WinnerDisplay text={`${battleResult.winner.name}`} />}
-      <BattleSection>
+      <section className="page-section">
         <MonsterBattleCard
           title={selectedMonster?.name || 'Player'}
           monster={selectedMonster}></MonsterBattleCard>
-        <StartBattleButton
+        <Button
           data-testid="start-battle-button"
+          className="page-section-button"
           disabled={selectedMonster === null}
           onClick={handleStartBattleClick}>
           Start Battle
-        </StartBattleButton>
+        </Button>
         <MonsterBattleCard
           title="Computer"
           monster={computerMonster}></MonsterBattleCard>
-      </BattleSection>
-    </PageContainer>
+      </section>
+    </div>
   );
 };
 
